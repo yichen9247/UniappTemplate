@@ -37,37 +37,3 @@ page {
     padding-bottom: 15px;
     padding-top: var(--status-bar-height);
 }
-
-.collapse-card {
-    padding: unset;
-
-    :deep(.u-collapse-content) {
-        font-size: 14px;
-        line-height: 20px;
-    }
-}
-
-.frame-header {
-    display: flex;
-    line-height: 1;
-    padding: 20px 15px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    .name {
-        font-size: 18px;
-        color: #363636;
-        font-weight: bold;
-    }
-
-    .desc {
-        font-size: 18px;
-        color: #666666;
-    }
-}
-
-.empty-section {
-    flex: 1;
-    padding: 35px;
-}
