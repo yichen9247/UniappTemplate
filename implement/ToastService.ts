@@ -24,4 +24,17 @@ export class ToastService {
         uni.hideLoading();
         this.loading.value = false;
     }
+
+    showModal({ 
+        title, content, 
+        showCancel = false,
+        success = (): void => {},
+    }: {
+        title: string,
+        content: string,
+        showCancel?: boolean,
+        success?: (res: any) => void
+    }): void {
+        uni.showModal({ title, content, showCancel, success });
+    }
 }
