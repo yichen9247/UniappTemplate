@@ -1,0 +1,73 @@
+.privacy-dialog-component {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    z-index: 9999999;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .privacy-bottom {
+        align-items: flex-end;
+    }
+
+    .content-box {
+        width: 632rpx;
+        padding: 25px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+
+        .title-text {
+            display: block;
+            font-size: 18px;
+            color: #363636;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .privacy-text {
+            font-size: 13px;
+            color: #666666;
+            margin-top: 20px;
+            line-height: 22px;
+            text-align: justify;
+            word-wrap: break-word;
+
+            .link-text {
+                color: var(--dominColor);
+            }
+        }
+    }
+
+    .button-box {
+        gap: 10px;
+        display: flex;
+        margin-top: 20px;
+
+        .button {
+            flex: 1;
+            height: 35px;
+            display: flex;
+            font-size: 14px;
+            font-weight: 500;
+            overflow: visible;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .reject-btn {
+            color: #666666;
+            margin-right: 16rpx;
+            background-color: #f1f1f1;
+        }
+
+        .agree-btn {
+            color: #ffffff;
+            background-color: var(--dominColor);
+        }
+    }
+}

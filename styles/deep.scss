@@ -1,0 +1,42 @@
+:deep(.u-title) {
+    flex-direction: row;
+    align-items: center;
+}
+
+:deep(.u-input) {
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 10px!important;
+}
+
+:deep(.uni-tabbar__label) {
+	font-weight: bold;
+}
+
+:deep(.u-collapse > .u-line) {
+    display: none;  
+}
+
+:deep(.u-collapse-item__content > .u-line) {
+    &:last-child {
+        display: none;
+    }
+}
+
+:deep(.u-cell__body) {
+    padding: 15px!important;
+}
+
+:deep(.u-cell__title) {
+    font-weight: 500;
+    font-size: 16px!important;
+    color: #555555!important;
+}
+
+:deep(.content-class) {
+    padding: unset!important;
+}
+
+:deep(.u-cell__left-icon-wrap) {
+    display: none!important;
+}

@@ -1,0 +1,73 @@
+:root {
+    --dominColor: #1296db;
+}
+
+page {
+    background-color: #f5f5f5;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.app-card {
+    padding: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 15px;
+    position: relative;
+    border-radius: 10px;
+    width: calc(100% - 30px);
+    background-color: #ffffff;
+	border: 1px solid #e3e8f7;
+
+    .card-title {
+        font-size: 18px;
+        color: #363636;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+}
+
+.app-frame {
+    padding-bottom: 15px;
+    padding-top: var(--status-bar-height);
+}
+
+.collapse-card {
+    padding: unset;
+
+    :deep(.u-collapse-content) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.frame-header {
+    display: flex;
+    line-height: 1;
+    padding: 20px 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .name {
+        font-size: 18px;
+        color: #363636;
+        font-weight: bold;
+    }
+
+    .desc {
+        font-size: 18px;
+        color: #666666;
+    }
+}
+
+.empty-section {
+    flex: 1;
+    padding: 35px;
+}

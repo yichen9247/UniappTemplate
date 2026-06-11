@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"module": "esnext",
+		"target": "esnext",
+		"moduleResolution": "node",
+		"ignoreDeprecations": "6.0",
+		"paths": { "@/*": [ "./*" ] },
+		"types": [
+			"vue" ,"@dcloudio/types" ,"uni", "uni-app", "@dcloudio/uni-app"
+		],
+		"typeRoots": [
+			"./node_modules/@types", "./types"
+		]
+	},
+    "include": [
+	    "./**/*", "./types/**/*"
+    ]
+}

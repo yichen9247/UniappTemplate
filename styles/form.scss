@@ -1,0 +1,61 @@
+.activity-add-form {
+	.form-box {
+		padding: 0 20px;
+        margin-bottom: 10px;
+		background-color: #ffffff;
+
+		.form-item {
+			display: flex;
+			font-size: 15px;
+            padding: 10px 0;
+			color: #363636;
+            min-height: 55px;
+			align-items: center;
+			border-bottom: 1px solid #e3e8f7;
+			
+			&:last-child {
+				border-bottom: unset;
+			}
+			
+			.form-label {
+				width: 100px;
+			}
+			
+			.form-content {
+                flex: 1;
+                font-size: 15px;
+                color: #666666;
+
+                .text {
+                    margin: 10px 0;
+                }
+
+                .input-box {
+                    width: 100%;
+                    border: unset;
+                    padding: unset!important;
+                }
+
+                * {
+                    font-size: 15px!important;
+                    color: #666666!important;
+                }
+			}
+		}
+	}
+
+    .submit-btn {
+        margin: 20px auto;
+        border-radius: 10px;
+        width: calc(100% - 30px);
+    }
+
+    :deep(.u-form-item__body) {
+        padding: unset!important;
+    }
+    
+    :deep(.u-form-item__body__right__message) {
+        margin-left: 0!important;
+        margin-bottom: 10px;
+    }
+}
